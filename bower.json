@@ -1,0 +1,25 @@
+{
+  "name": "eventCollector",
+  "version": "0.0.1",
+  "homepage": "https://github.com/eladsof/eventCollector",
+  "authors": [
+    "Elad Sofer <elad.sofer@gmail.com>"
+  ],
+  "description": "A componenet to fetch events from different sources",
+  "main": "eventCollector.js",
+  "keywords": [
+    "?"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "qunit": "~1.18.0"
+  }
+}
