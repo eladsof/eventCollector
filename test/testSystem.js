@@ -1,6 +1,11 @@
 
 QUnit.test( "event collector getall", function( assert ) {
-  var userId = "FAKE_USER_ID";
-  var events = eventCollector.getAll('FAKE','FAKE');
-  assert.equal(events.length, 0, "There should be no events for a fake id" );
+  mockEventbriteAPI();
+  mockMeetupApi();
+  
+  var socialData = {meetup : {group_id: 12345, AuthKey: 'jhjkhjkhkj'}, 
+                    eventbrite: {organizationId: 'khjhkjhj',token : ''}}
+  var events = eventCollector.getAll(socialData);
+
+  assert.equal(events.length,4,"Expected to return 4 elements");
 });
